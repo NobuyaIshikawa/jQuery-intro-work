@@ -1,4 +1,4 @@
-study
+jQuery-intro-work
 =====
 # jQuery01_ボタンと連動してテキストを変える
 
