@@ -78,9 +78,12 @@
 		var l = array.length;
 		for(var i = 0; i < 25; i++){
 			var r = Math.floor(Math.random() * l);
-			console.log(l);
 			var chk = array[r];
 			$("input").eq(i).prop("checked", chk);
 		}
+		// jQueryらしく書いてみるとこのように簡潔にかけます。
+		// $.each($("input"), function()){
+		// 	$(this).prop("checked", Math.random() < 0.5);
+		// }
 	});
 });
