@@ -82,6 +82,10 @@
 			var chk = array[r];
 			$("input").eq(i).prop("checked", chk);
 		}
+		// jQueryらしく書いてみるとこのように簡潔にかけます。
+		// $.each($("input"), function()){
+		// 	$(this).prop("checked", Math.random() < 0.5);
+		// }
 		colorUpdate();
 	});
 });
