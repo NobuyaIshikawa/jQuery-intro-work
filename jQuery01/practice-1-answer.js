@@ -1,11 +1,11 @@
 ﻿$(document).ready(function(){
 	$(".buttonA").click(function(){
-		//ここに記述
+		$(this).prev().text("OK");
 	});
 	$(".buttonB").click(function(){
-		//ここに記述
+		$(this).prev().children().text("OK");
 	});
 	$(".buttonC").click(function(){
-		//ここに記述
+		$(this).parent().prev().children().text("OK");
 	});
 });
